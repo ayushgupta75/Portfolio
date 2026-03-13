@@ -14,183 +14,16 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <a class="wordmark" href="#top">AYUSH</a>
-        <nav class="site-nav" aria-label="Primary">
-          <a href="#work">Work</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <nav class="site-nav" aria-label="Primary" id="site-nav"></nav>
       </header>
 
-      <main id="top">
-        <section class="hero reveal">
-          <div class="hero-copy">
-            <p class="eyebrow">Software Engineer • Builder • Problem Solver</p>
-            <h1>
-              I build thoughtful digital experiences with sharp visuals and
-              clean engineering.
-            </h1>
-            <p class="hero-text">
-              This is a starter portfolio with a confident, editorial look. Swap
-              in your own projects, metrics, and links, and it is ready to
-              become your personal site.
-            </p>
-            <div class="hero-actions">
-              <a class="button button-primary" href="#work">See Projects</a>
-              <a class="button button-secondary" href="#contact">Let’s Talk</a>
-            </div>
-          </div>
-
-          <aside class="hero-card reveal">
-            <p class="card-label">Currently focused on</p>
-            <ul class="focus-list">
-              <li>Frontend systems with strong motion and layout</li>
-              <li>Product-minded full-stack builds</li>
-              <li>Interfaces that feel memorable, not generic</li>
-            </ul>
-            <div class="availability-pill">
-              <span class="status-dot"></span>
-              Open to internships, freelance, and full-time roles
-            </div>
-          </aside>
-        </section>
-
-        <section class="metrics reveal" aria-label="Highlights">
-          <article>
-            <span class="metric-value">3+</span>
-            <p>Portfolio-ready case study slots with room to expand.</p>
-          </article>
-          <article>
-            <span class="metric-value">Fast</span>
-            <p>Static-first structure with no tooling required to launch.</p>
-          </article>
-          <article>
-            <span class="metric-value">Easy</span>
-            <p>All copy, links, and project data live in plain HTML.</p>
-          </article>
-        </section>
-
-        <section class="section-heading reveal" id="work">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects that show range, ownership, and taste.</h2>
-        </section>
-
-        <section class="projects-grid">
-          <article class="project-card reveal">
-            <p class="project-index">01</p>
-            <h3>Signal Commerce Dashboard</h3>
-            <p>
-              An analytics workspace for merchants with real-time sales trends,
-              campaign attribution, and high-signal reporting.
-            </p>
-            <ul class="tag-list">
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Data Viz</li>
-            </ul>
-            <a href="#" aria-label="Open Signal Commerce Dashboard case study"
-              >Case Study</a
-            >
-          </article>
-
-          <article class="project-card reveal">
-            <p class="project-index">02</p>
-            <h3>Atlas Travel Planner</h3>
-            <p>
-              A trip-planning experience that turns destinations, routes, and
-              reservations into a clear collaborative itinerary.
-            </p>
-            <ul class="tag-list">
-              <li>Next.js</li>
-              <li>Node</li>
-              <li>Maps</li>
-            </ul>
-            <a href="#" aria-label="Open Atlas Travel Planner case study"
-              >Live Demo</a
-            >
-          </article>
-
-          <article class="project-card reveal">
-            <p class="project-index">03</p>
-            <h3>Foundry Design System</h3>
-            <p>
-              A reusable UI foundation with accessible components, layout
-              primitives, and documentation for faster product delivery.
-            </p>
-            <ul class="tag-list">
-              <li>Design Systems</li>
-              <li>Storybook</li>
-              <li>Accessibility</li>
-            </ul>
-            <a href="#" aria-label="Open Foundry Design System repository"
-              >Repository</a
-            >
-          </article>
-        </section>
-
-        <section class="about-section reveal" id="about">
-          <div class="section-heading compact">
-            <p class="eyebrow">About</p>
-            <h2>Technical depth paired with product instinct.</h2>
-          </div>
-          <div class="about-grid">
-            <p>
-              I care about building software that feels calm, fast, and useful.
-              My best work sits at the intersection of engineering discipline,
-              interface craft, and business context.
-            </p>
-            <p>
-              This template is structured to help you tell that story clearly:
-              what you build, how you think, and why your work matters. Replace
-              the sample text with your real experience and measurable outcomes.
-            </p>
-          </div>
-        </section>
-
-        <section class="timeline reveal" aria-label="Process">
-          <div class="section-heading compact">
-            <p class="eyebrow">How I Work</p>
-            <h2>A simple way to communicate your approach.</h2>
-          </div>
-          <div class="timeline-grid">
-            <article>
-              <span>Discover</span>
-              <p>Clarify the user problem, success metrics, and key tradeoffs.</p>
-            </article>
-            <article>
-              <span>Design</span>
-              <p>Shape flows and interfaces that are legible, useful, and bold.</p>
-            </article>
-            <article>
-              <span>Deliver</span>
-              <p>Build with care, test the edges, and keep performance in view.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="contact-section reveal" id="contact">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s build something ambitious.</h2>
-          </div>
-          <div class="contact-card">
-            <p>
-              Replace these links with your real profiles when you are ready to
-              publish.
-            </p>
-            <div class="contact-links">
-              <a href="mailto:hello@ayushgupta.dev">hello@ayushgupta.dev</a>
-              <a href="#">LinkedIn</a>
-              <a href="#">GitHub</a>
-            </div>
-          </div>
-        </section>
-      </main>
+      <main id="top" class="site-main"></main>
 
       <footer class="site-footer">
         <p>© <span id="year"></span> Ayush Gupta</p>
@@ -198,6 +31,6 @@
       </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="src/app/main.js"></script>
   </body>
 </html>

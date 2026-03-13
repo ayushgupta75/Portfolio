@@ -1,0 +1,148 @@
+.page-shell {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.site-header,
+.site-footer,
+.hero,
+.metrics,
+.projects-grid,
+.about-section,
+.experience-section,
+.education-section,
+.contact-section {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header,
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header {
+  padding: 0.75rem 0 2.5rem;
+}
+
+.site-footer {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 2rem;
+  align-items: end;
+  padding: 2rem 0 5rem;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.about-grid,
+.contact-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.experience-list,
+.journey-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.experience-card-header,
+.education-list {
+  display: grid;
+}
+
+.education-list {
+  gap: 1rem;
+}
+
+.experience-card-header,
+.journey-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.journey-card {
+  grid-template-columns: 0.7fr 1.3fr;
+  padding: 1.6rem;
+  border-radius: 24px;
+}
+
+@media (max-width: 960px) {
+  .hero,
+  .about-grid,
+  .contact-section,
+  .projects-grid,
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 1rem;
+  }
+
+  .experience-card-header,
+  .journey-card {
+    grid-template-columns: 1fr;
+  }
+
+  .education-card-header {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(calc(100% - 1.25rem), var(--max-width));
+    padding-top: 1rem;
+  }
+
+  .site-header,
+  .site-footer {
+    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  h1 {
+    max-width: 100%;
+  }
+
+  .about-section,
+  .journey-card,
+  .education-card,
+  .contact-card,
+  .project-card,
+  .metrics article,
+  .hero-card {
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,157 @@
+.site-nav,
+.hero-actions,
+.contact-links,
+.tag-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wordmark,
+.site-nav a,
+.button,
+.project-card a,
+.contact-links a,
+.site-footer a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wordmark {
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 0.88rem;
+}
+
+.site-nav a,
+.site-footer a {
+  color: var(--muted);
+}
+
+.site-nav a:hover,
+.project-card a:hover,
+.contact-links a:hover,
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.eyebrow,
+.card-label,
+.project-index,
+.metric-value {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.eyebrow,
+.card-label,
+.project-index {
+  color: var(--accent);
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.2rem;
+  padding: 0 1.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background: var(--text);
+  color: #fffaf0;
+  border-color: var(--text);
+}
+
+.button-secondary {
+  background: rgba(255, 250, 240, 0.72);
+  backdrop-filter: blur(12px);
+}
+
+.hero-card,
+.project-card,
+.about-section,
+.experience-card,
+.journey-card,
+.education-card,
+.contact-card,
+.metrics article {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+}
+
+.hero-card {
+  padding: 1.5rem;
+  border-radius: 28px;
+}
+
+.focus-list {
+  margin: 0 0 1.5rem;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.availability-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 0.95rem;
+}
+
+.status-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: #3ea565;
+  box-shadow: 0 0 0 0.35rem rgba(62, 165, 101, 0.15);
+}
+
+.metric-value {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  font-size: 1.35rem;
+  color: var(--text);
+}
+
+.section-heading {
+  margin-bottom: 1.8rem;
+}
+
+.section-heading.compact {
+  margin-bottom: 1.3rem;
+}
+
+.tag-list {
+  list-style: none;
+  padding: 0;
+  margin: auto 0 1.4rem;
+}
+
+.tag-list li {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(31, 28, 24, 0.08);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.project-card a,
+.contact-links a {
+  font-weight: 500;
+}
