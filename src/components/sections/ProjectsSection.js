@@ -17,7 +17,7 @@ export const renderProjectsSection = (projects) => `
             <ul class="tag-list">
               ${project.tags.map((tag) => `<li>${tag}</li>`).join("")}
             </ul>
-            ${renderLink(project.link)}
+            <!-- ${renderLink(project.link)} -->
           </article>
         `
       )

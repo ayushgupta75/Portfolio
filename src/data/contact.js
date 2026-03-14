@@ -10,7 +10,7 @@ export const contactData = {
       label: "ayushguptamtc@gmail.com",
     },
     {
-      href: "https://www.linkedin.com/guptaayush75",
+      href: "https://www.linkedin.com/in/guptaayush75",
       label: "LinkedIn",
       external: true,
     },

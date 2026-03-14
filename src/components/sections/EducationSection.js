@@ -1,6 +1,6 @@
 import { renderSectionHeading } from "../common/SectionHeading.js";
 
-const renderEducationCard = ({ college, major, degree, duration, details }) => `
+const renderEducationCard = ({ college, major, degree, duration }) => `
   <article class="education-card reveal">
     <div class="education-card-header">
       <div class="education-timeline">
@@ -10,7 +10,6 @@ const renderEducationCard = ({ college, major, degree, duration, details }) => `
       <div class="education-title-block">
         <h3>${college}</h3>
         <p class="education-major">${major}</p>
-        <p>${details}</p>
       </div>
     </div>
   </article>

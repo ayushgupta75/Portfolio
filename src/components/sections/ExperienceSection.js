@@ -1,5 +1,17 @@
 import { renderSectionHeading } from "../common/SectionHeading.js";
 
+const renderExperienceDetails = (details) => {
+  if (Array.isArray(details)) {
+    return `
+      <ul class="experience-details-list">
+        ${details.map((item) => `<li>${item}</li>`).join("")}
+      </ul>
+    `;
+  }
+
+  return `<p class="experience-details">${details}</p>`;
+};
+
 const renderExperienceCard = ({ company, role, duration, details }) => `
   <article class="experience-card reveal">
     <div class="experience-card-header">
@@ -11,7 +23,7 @@ const renderExperienceCard = ({ company, role, duration, details }) => `
         <span class="experience-duration">${duration}</span>
       </div>
     </div>
-    <p class="experience-details">${details}</p>
+    ${renderExperienceDetails(details)}
   </article>
 `;
 

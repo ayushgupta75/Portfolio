@@ -5,22 +5,22 @@ export const projectsData = {
   items: [
     {
       index: "01",
-      title: "Signal Commerce Dashboard",
+      title: "LeadFlow AI",
       description:
-        "An analytics workspace for merchants with real-time sales trends, campaign attribution, and high-signal reporting.",
-      tags: ["React", "TypeScript", "Data Viz"],
+        "Build an LLM-powered stateful MultiAgent workflow using LangChain and LangGraph to orchestrate lead intake, scoring, next-best-action recommendation, reminder scheduling, and CRM-style status updates.",
+      tags: ["React", "FastAPI", "PostgreSQL"],
       link: {
         href: "#",
-        label: "Case Study",
+        label: "Live Demo",
         ariaLabel: "Open Signal Commerce Dashboard case study",
       },
     },
     {
       index: "02",
-      title: "Atlas Travel Planner",
+      title: "Financial Market Prediction & Backtesting Engine",
       description:
-        "A trip-planning experience that turns destinations, routes, and reservations into a clear collaborative itinerary.",
-      tags: ["Next.js", "Node", "Maps"],
+        "Built an end-to-end financial ML pipeline that ingests OHLCV, fundamentals, and news signals, performs data cleansing/feature engineering, and trains predictive models using Python, NumPy, scikit-learn, and PyTorch.",
+      tags: ["React.js", "Deep Learning", "MLOps"],
       link: {
         href: "#",
         label: "Live Demo",
@@ -29,10 +29,10 @@ export const projectsData = {
     },
     {
       index: "03",
-      title: "Foundry Design System",
+      title: "Personalized Context-Aware Recommendation Platform",
       description:
-        "A reusable UI foundation with accessible components, layout primitives, and documentation for faster product delivery.",
-      tags: ["Design Systems", "Storybook", "Accessibility"],
+        "Built ContextRec, a context-aware recommendation system that personalizes rankings using time-of-day, device type, and location signals, improving relevance across user segments.",
+      tags: ["Wide&Deep", "MLOps"],
       link: {
         href: "#",
         label: "Repository",

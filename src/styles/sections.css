@@ -86,6 +86,21 @@
   color: var(--muted);
 }
 
+.experience-details-list {
+  margin: 1rem 0 0;
+  padding-left: 1.3rem;
+  color: var(--muted);
+}
+
+.experience-details-list li {
+  margin-bottom: 0.7rem;
+  line-height: 1.7;
+}
+
+.experience-details-list li:last-child {
+  margin-bottom: 0;
+}
+
 .journey-meta span {
   display: inline-block;
   margin-bottom: 0.85rem;
