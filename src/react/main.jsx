@@ -19,7 +19,7 @@ import { navigationData } from '../data/navigation';
 import ProjectsSection from './components/sections/ProjectsSection/ProjectsSection';
 import ContactSection from './components/sections/ContactSection/ContactSection';
 import EducationSection from './components/sections/EducationSection/EducationSection';
-import ExperienceCard from './components/features/ExperienceCard/ExperienceCard';
+import ExperienceSection from './components/sections/ExperienceSection/ExperienceSection';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       {/* <ProjectsSection /> */}
       {/* <ContactSection /> */}
       {/* <EducationSection /> */}
-      <ExperienceCard />
+      <ExperienceSection />
     </div>
   );
 }

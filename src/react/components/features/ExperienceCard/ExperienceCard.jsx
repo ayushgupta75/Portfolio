@@ -1,11 +1,7 @@
 import commonStyles from '../../CommonStyles.module.css';
 import styles from './ExperienceCard.module.css';
 
-import { experienceData } from '../../../../data/experience';
-
-const mockExperience = experienceData.items[3];
-
-function ExperienceCard({ experience = mockExperience, ...props }) {
+function ExperienceCard({ experience, ...props }) {
   const className = `${commonStyles.container} ${styles['experience-card']}`;
 
   return (
