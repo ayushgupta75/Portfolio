@@ -1,11 +1,7 @@
 import commonStyles from '../../CommonStyles.module.css';
 import styles from './EducationCard.module.css';
 
-import { educationData } from '../../../../data/education';
-
-const mockEducation = educationData.items[0];
-
-function EducationCard({ education = mockEducation, ...props }) {
+function EducationCard({ education, ...props }) {
   // TODO: Add reveal
   const className = `${commonStyles.container} ${styles['education-card']}`;
 
