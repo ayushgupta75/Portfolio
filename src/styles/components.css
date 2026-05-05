@@ -35,6 +35,7 @@
   color: var(--accent);
 }
 
+/* NOTE: eyebrow is now its own class */
 .eyebrow,
 .card-label,
 .project-index,
@@ -43,6 +44,7 @@
   letter-spacing: 0.12em;
 }
 
+/* NOTE: eyebrow is now its own class */
 .eyebrow,
 .card-label,
 .project-index {

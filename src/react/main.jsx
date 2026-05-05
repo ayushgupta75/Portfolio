@@ -18,11 +18,12 @@ import SectionHeading from './components/common/SectionHeading/SectionHeading';
 import { navigationData } from '../data/navigation';
 import Navigation from './components/layout/Navigation/Navigation';
 import ProjectCard from './components/features/ProjectCard';
+import ProjectsSection from './components/sections/ProjectsSection/ProjectsSection';
 
 function App() {
   return (
     <div>
-      <ProjectCard />
+      <ProjectsSection />
     </div>
   );
 }
