@@ -1,12 +1,13 @@
 import commonStyles from '../../CommonStyles.module.css';
 import SectionHeading from '../SectionHeading/SectionHeading';
 
-function SectionHeader({ eyebrow, title, ...props }) {
+function SectionHeader({ eyebrow, title, compact = false, ...props }) {
+  // TODO implement compact style
   return (
     <>
-      <p className={commonStyles.eyebrow}>{eyebrow}</p>
+      {eyebrow && <p className={commonStyles.eyebrow}>{eyebrow}</p>}
 
-      <SectionHeading>{title}</SectionHeading>
+      <SectionHeading compact={compact}>{title}</SectionHeading>
     </>
   );
 }
