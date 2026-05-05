@@ -19,13 +19,15 @@ import { navigationData } from '../data/navigation';
 import ProjectsSection from './components/sections/ProjectsSection/ProjectsSection';
 import ContactSection from './components/sections/ContactSection/ContactSection';
 import EducationSection from './components/sections/EducationSection/EducationSection';
+import ExperienceCard from './components/features/ExperienceCard/ExperienceCard';
 
 function App() {
   return (
     <div>
       {/* <ProjectsSection /> */}
       {/* <ContactSection /> */}
-      <EducationSection />
+      {/* <EducationSection /> */}
+      <ExperienceCard />
     </div>
   );
 }
