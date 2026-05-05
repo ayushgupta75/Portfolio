@@ -13,6 +13,7 @@ import Link from './components/common/Link/Link';
 import Button from './components/common/Button/Button';
 import PrimaryButton from './components/common/Button/PrimaryButton';
 import SecondaryButton from './components/common/Button/SecondaryButton';
+import SectionHeading from './components/common/SectionHeading/SectionHeading';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
 
       <PrimaryButton>See projects</PrimaryButton>
       <SecondaryButton>Contact me</SecondaryButton>
+      <SectionHeading>Section Heading</SectionHeading>
+      <SectionHeading compact>Section Heading Compact</SectionHeading>
     </div>
   );
 }
