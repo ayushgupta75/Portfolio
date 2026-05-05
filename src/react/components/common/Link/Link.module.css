@@ -1,0 +1,11 @@
+.link {
+  color: var(--text);
+  text-decoration: none;
+  outline: none;
+  font-weight: 500;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--accent);
+}
