@@ -8,3 +8,18 @@
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+.container {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(14px);
+  box-shadow: var(--shadow);
+
+  border-radius: 20px;
+}
+
+.paragraph {
+  font-size: 1.02rem;
+  line-height: 1.75;
+  color: var(--muted);
+}

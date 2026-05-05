@@ -136,6 +136,7 @@
     max-width: 100%;
   }
 
+  /* TODO DELETE: Already used in a css module (.container) */
   .about-section,
   .journey-card,
   .education-card,

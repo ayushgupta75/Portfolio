@@ -17,19 +17,12 @@ import SectionHeading from './components/common/SectionHeading/SectionHeading';
 
 import { navigationData } from '../data/navigation';
 import Navigation from './components/layout/Navigation/Navigation';
+import ProjectCard from './components/features/ProjectCard';
 
 function App() {
   return (
     <div>
-      <Navigation items={navigationData} />
-      <Link isContact href="https://www.example.com" external>
-        Visit Example
-      </Link>
-
-      <PrimaryButton>See projects</PrimaryButton>
-      <SecondaryButton>Contact me</SecondaryButton>
-      <SectionHeading>Section Heading</SectionHeading>
-      <SectionHeading compact>Section Heading Compact</SectionHeading>
+      <ProjectCard />
     </div>
   );
 }
