@@ -1,0 +1,28 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.2rem;
+  padding: 0 1.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  background: var(--text);
+  color: #fffaf0;
+  border-color: var(--text);
+}
+
+.button-secondary {
+  background: rgba(255, 250, 240, 0.72);
+  backdrop-filter: blur(12px);
+}

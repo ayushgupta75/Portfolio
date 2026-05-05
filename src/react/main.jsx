@@ -10,6 +10,9 @@ import '../styles/tokens.css';
 import '../styles/utilities.css';
 
 import Link from './components/common/Link/Link';
+import Button from './components/common/Button/Button';
+import PrimaryButton from './components/common/Button/PrimaryButton';
+import SecondaryButton from './components/common/Button/SecondaryButton';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Link href="https://www.example.com" external>
         Visit Example
       </Link>
+
+      <PrimaryButton>See projects</PrimaryButton>
+      <SecondaryButton>Contact me</SecondaryButton>
     </div>
   );
 }

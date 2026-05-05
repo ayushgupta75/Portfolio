@@ -59,7 +59,11 @@
   padding: 0 1.3rem;
   border-radius: 999px;
   border: 1px solid var(--line);
-  transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease;
 }
 
 .button:hover {
