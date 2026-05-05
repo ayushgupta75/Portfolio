@@ -22,7 +22,7 @@ function ProjectsSection({ ...props }) {
         style={{ gap: '1rem', marginBottom: '5rem' }}
       >
         {projectsData.items.map((project) => (
-          <ProjectCard key={project.id} project={project} />
+          <ProjectCard key={project.index} project={project} />
         ))}
       </GridAutoCols>
     </section>
