@@ -3,15 +3,17 @@ import { projectsData } from '../../../../data/projects';
 import ProjectCard from '../../features/ProjectCard/ProjectCard';
 import SectionHeading from '../../common/SectionHeading/SectionHeading';
 import commonStyles from '../../CommonStyles.module.css';
+import SectionHeader from '../../common/SectionHeader/SectionHeader';
 
 function ProjectsSection({ ...props }) {
   // TODO add reveal animation
 
   return (
     <section {...props}>
-      <p className={commonStyles.eyebrow}>{projectsData.eyebrow}</p>
-
-      <SectionHeading>{projectsData.title}</SectionHeading>
+      <SectionHeader
+        eyebrow={projectsData.eyebrow}
+        title={projectsData.title}
+      />
 
       <GridAutoCols
         min={'20rem'}
