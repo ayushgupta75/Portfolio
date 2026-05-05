@@ -1,6 +1,6 @@
 import GridAutoCols from '../../common/GridAutoCols/GridAutoCols';
 import { projectsData } from '../../../../data/projects';
-import ProjectCard from '../../features/ProjectCard';
+import ProjectCard from '../../features/ProjectCard/ProjectCard';
 import SectionHeading from '../../common/SectionHeading/SectionHeading';
 import commonStyles from '../../CommonStyles.module.css';
 

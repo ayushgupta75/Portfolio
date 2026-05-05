@@ -1,6 +1,6 @@
 import styles from './ProjectCard.module.css';
-import commonStyles from '../CommonStyles.module.css';
-import { TagItem, TagList } from '../common/TagList/TagList';
+import commonStyles from '../../CommonStyles.module.css';
+import { TagItem, TagList } from '../../common/TagList/TagList';
 
 function ProjectCard({ project, ...props }) {
   // TODO add reveal animation
