@@ -9,8 +9,15 @@ function ContactSection({ ...props }) {
 
   return (
     <section {...props}>
-      <SectionHeader eyebrow={contactData.eyebrow} title={contactData.title} />
-      <ContactCard summary={contactData.summary} links={contactData.links} />
+      <GridAutoCols min={'0.5fr'} max={'1fr'} fitOrFill="fill">
+        <div>
+          <SectionHeader
+            eyebrow={contactData.eyebrow}
+            title={contactData.title}
+          />
+        </div>
+        <ContactCard summary={contactData.summary} links={contactData.links} />
+      </GridAutoCols>
     </section>
   );
 }
