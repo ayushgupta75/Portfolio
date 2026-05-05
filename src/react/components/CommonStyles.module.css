@@ -1,3 +1,10 @@
 .muted-text {
   color: var(--muted);
 }
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+}

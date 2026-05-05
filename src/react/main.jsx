@@ -15,10 +15,14 @@ import PrimaryButton from './components/common/Button/PrimaryButton';
 import SecondaryButton from './components/common/Button/SecondaryButton';
 import SectionHeading from './components/common/SectionHeading/SectionHeading';
 
+import { navigationData } from '../data/navigation';
+import Navigation from './components/layout/Navigation/Navigation';
+
 function App() {
   return (
     <div>
-      <Link href="https://www.example.com" external>
+      <Navigation items={navigationData} />
+      <Link isContact href="https://www.example.com" external>
         Visit Example
       </Link>
 
