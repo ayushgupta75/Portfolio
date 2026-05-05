@@ -51,6 +51,7 @@
   margin-bottom: 1rem;
 }
 
+/* TODO DELETE: Already used in a css module */
 .button {
   display: inline-flex;
   align-items: center;
@@ -66,16 +67,19 @@
     border-color 180ms ease;
 }
 
+/* TODO DELETE: Already used in a css module */
 .button:hover {
   transform: translateY(-2px);
 }
 
+/* TODO DELETE: Already used in a css module */
 .button-primary {
   background: var(--text);
   color: #fffaf0;
   border-color: var(--text);
 }
 
+/* TODO DELETE: Already used in a css module */
 .button-secondary {
   background: rgba(255, 250, 240, 0.72);
   backdrop-filter: blur(12px);
@@ -132,10 +136,12 @@
   color: var(--text);
 }
 
+/* TODO DELETE: Already used in a css module */
 .section-heading {
   margin-bottom: 1.8rem;
 }
 
+/* TODO DELETE: Already used in a css module */
 .section-heading.compact {
   margin-bottom: 1.3rem;
 }
