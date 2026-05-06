@@ -3,7 +3,6 @@ import commonStyles from '../../CommonStyles.module.css';
 import Link from '../../common/Link/Link';
 
 function ContactCard({ summary, links, ...props }) {
-  // TODO add reveal animation
   const className = `${commonStyles.container} ${styles['contact-card']}`;
 
   return (

@@ -1,4 +1,4 @@
-@use '../../../../styles/breakpoints' as *;
+@use '../../../../styles/_breakpoints' as *;
 
 .page-shell {
   width: min(calc(100% - 2rem), var(--max-width));
