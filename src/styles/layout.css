@@ -127,6 +127,7 @@
 }
 
 @media (max-width: 640px) {
+  /* DONE */
   .page-shell {
     width: min(calc(100% - 1.25rem), var(--max-width));
     padding-top: 1rem;

@@ -1,0 +1,12 @@
+@use '../../../../styles/breakpoints' as *;
+
+.page-shell {
+  width: min(calc(100% - 2rem), var(--max-width));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+
+  @media (max-width: $breakpoint-sm) {
+    width: min(calc(100% - 1.25rem), var(--max-width));
+    padding-top: 1rem;
+  }
+}

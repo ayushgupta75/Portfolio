@@ -1,4 +1,4 @@
-import styles from './PageShell.module.css';
+import styles from './PageShell.module.scss';
 
 function PageShell({ children }) {
   const className = `${styles['page-shell']}`;
