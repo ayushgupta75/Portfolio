@@ -2,11 +2,13 @@
 
 ## Frontend
 
-- `src/app/`: app startup and bootstrapping
-- `src/components/`: reusable layout, common UI, and page sections
+- `src/react/`: React application (entry point `main.jsx`)
+- `src/react/components/common/`: base reusable components (Button, Link, SectionHeading, Reveal, TagList)
+- `src/react/components/features/`: section-specific card components (HeroCard, ExperienceCard, ProjectCard, etc.)
+- `src/react/components/layout/`: structural layout components (PageShell, Header, Navigation, Main, Footer)
+- `src/react/components/sections/`: top-level page sections composed from feature cards
 - `src/data/`: editable portfolio content
-- `src/utils/`: DOM and animation helpers
-- `src/styles/`: design tokens, layout, components, and section styling
+- `src/styles/`: design tokens, element resets, and breakpoint mixins
 
 ## Future RAG Boundary
 
