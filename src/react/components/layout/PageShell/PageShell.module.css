@@ -3,9 +3,3 @@
   margin: 0 auto;
   padding: 1.5rem 0 3rem;
 }
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}

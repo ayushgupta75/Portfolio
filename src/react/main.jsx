@@ -10,16 +10,22 @@ import ExperienceSection from './components/sections/ExperienceSection/Experienc
 import HeroSection from './components/sections/HeroSection/HeroSection';
 import AboutSection from './components/sections/AboutSection/AboutSection';
 import PageShell from './components/layout/PageShell/PageShell';
+import Footer from './components/layout/Footer/Footer';
+import Main from './components/layout/Main/Main';
 
 function App() {
   return (
     <PageShell>
-      <HeroSection />
-      <AboutSection />
-      <ExperienceSection />
-      <EducationSection />
-      <ProjectsSection />
-      <ContactSection />
+      <Main>
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <EducationSection />
+        <ProjectsSection />
+        <ContactSection />
+      </Main>
+
+      <Footer />
     </PageShell>
   );
 }
