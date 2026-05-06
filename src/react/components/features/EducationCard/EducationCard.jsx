@@ -1,5 +1,5 @@
 import commonStyles from '../../CommonStyles.module.css';
-import styles from './EducationCard.module.css';
+import styles from './EducationCard.module.scss';
 
 function EducationCard({ education, ...props }) {
   // TODO: Add reveal

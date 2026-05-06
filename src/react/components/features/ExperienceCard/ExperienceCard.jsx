@@ -1,5 +1,5 @@
 import commonStyles from '../../CommonStyles.module.css';
-import styles from './ExperienceCard.module.css';
+import styles from './ExperienceCard.module.scss';
 
 function ExperienceCard({ experience, ...props }) {
   const className = `${commonStyles.container} ${styles['experience-card']}`;

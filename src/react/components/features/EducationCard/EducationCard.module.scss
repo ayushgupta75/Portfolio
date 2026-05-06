@@ -1,3 +1,5 @@
+@use '../../../../styles/breakpoints' as *;
+
 .education-card {
   display: grid;
   grid-template-columns: 16rem minmax(0, 1fr);
@@ -7,6 +9,12 @@
   border-radius: 24px;
 
   padding: 1.8rem 1.6rem;
+
+  // NOTE: Original breaking doesn't seem to work, so I'll comment this part, since the style looks better to me
+
+  // @media (max-width: $breakpoint-lg) {
+  // grid-template-columns: 1fr;
+  // }
 }
 
 .education-timeline {

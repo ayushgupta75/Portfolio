@@ -95,6 +95,7 @@
 }
 
 @media (max-width: 960px) {
+  /* DONE */
   .hero,
   .about-grid,
   .contact-section,
@@ -103,19 +104,23 @@
     grid-template-columns: 1fr;
   }
 
+  /* DONE */
   .hero {
     padding-top: 1rem;
   }
 
+  /* DONE */
   .experience-card-header,
   .journey-card {
     grid-template-columns: 1fr;
   }
 
+  /* DONE */
   .education-card-header {
     grid-template-columns: 1fr;
   }
 
+  /* Not needed */
   .project-card {
     min-height: auto;
   }

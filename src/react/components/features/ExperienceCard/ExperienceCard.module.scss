@@ -1,3 +1,5 @@
+@use '../../../../styles/breakpoints' as *;
+
 .experience-card {
   border-radius: 24px;
 
@@ -10,6 +12,10 @@
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 1.5rem;
   align-items: start;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .experience-title-block h3 {

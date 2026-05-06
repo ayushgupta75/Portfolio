@@ -4,7 +4,6 @@
 
 .project-card {
   padding: 1.5rem;
-  min-height: 22rem;
   display: flex;
   flex-direction: column;
 }
