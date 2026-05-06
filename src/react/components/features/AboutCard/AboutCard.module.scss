@@ -1,0 +1,17 @@
+@use '../../../../styles/_breakpoints.scss' as *;
+
+.about-card {
+  padding: 1.5rem 2rem;
+}
+
+.about-text {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: $breakpoint-lg) {
+  .about-text {
+    grid-template-columns: 1fr;
+  }
+}

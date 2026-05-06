@@ -1,5 +1,5 @@
 import commonStyles from '../../CommonStyles.module.css';
-import styles from './AboutCard.module.css';
+import styles from './AboutCard.module.scss';
 
 import { aboutData } from '../../../../data/about';
 import SectionHeader from '../../common/SectionHeader/SectionHeader';
