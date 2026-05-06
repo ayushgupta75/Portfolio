@@ -194,8 +194,8 @@ npm run build
 >
 > ```bash
 > npm install --save-dev gh-pages
-> # add "deploy": "gh-pages -d dist" to package.json scripts
-> npm run build && npm run deploy
+> # add "deploy-gh-pages": "vite build && gh-pages -d dist" to package.json scripts
+> npm run deploy-gh-pages
 > ```
 
 ### Netlify
