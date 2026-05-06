@@ -2,10 +2,12 @@ import Link from '../../common/Link/Link';
 
 import commonStyles from '../../CommonStyles.module.css';
 
-function Navigation({ items, ...props }) {
+import { navigationData } from '../../../../data/navigation';
+
+function Navigation({ ...props }) {
   return (
     <nav className={commonStyles['flex-container-row']} {...props}>
-      {items.map((item) => (
+      {navigationData.map((item) => (
         <Link
           key={item.href}
           href={item.href}

@@ -18,6 +18,7 @@
   text-decoration: none;
 }
 
+/* TODO: DELETE, already moved to CSS modules (.wordmark) */
 .wordmark {
   font-weight: 700;
   letter-spacing: 0.18em;

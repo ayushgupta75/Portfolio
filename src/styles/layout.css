@@ -17,6 +17,7 @@
   z-index: 1;
 }
 
+/* TODO DELETE: already used in a css module  */
 .site-header,
 .site-footer {
   display: flex;
@@ -24,6 +25,7 @@
   justify-content: space-between;
 }
 
+/* TODO DELETE: already used in a css module  */
 .site-header {
   padding: 0.75rem 0 2.5rem;
 }

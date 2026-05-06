@@ -12,10 +12,13 @@ import AboutSection from './components/sections/AboutSection/AboutSection';
 import PageShell from './components/layout/PageShell/PageShell';
 import Footer from './components/layout/Footer/Footer';
 import Main from './components/layout/Main/Main';
+import Header from './components/layout/Header/Header';
 
 function App() {
   return (
     <PageShell>
+      <Header />
+
       <Main>
         <HeroSection />
         <AboutSection />
