@@ -8,7 +8,7 @@ import { Reveal } from '../../common/Reveal/Reveal';
 
 function ProjectsSection({ ...props }) {
   return (
-    <Reveal as="section" {...props}>
+    <Reveal id="projects" as="section" {...props}>
       <SectionHeader
         eyebrow={projectsData.eyebrow}
         title={projectsData.title}

@@ -8,7 +8,12 @@ import { Reveal } from '../../common/Reveal/Reveal';
 
 function ContactSection({ ...props }) {
   return (
-    <Reveal as="section" className={styles['contact-section']} {...props}>
+    <Reveal
+      id="contact"
+      as="section"
+      className={styles['contact-section']}
+      {...props}
+    >
       <div>
         <SectionHeader
           eyebrow={contactData.eyebrow}

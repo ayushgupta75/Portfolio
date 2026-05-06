@@ -8,7 +8,7 @@ import { Reveal } from '../../common/Reveal/Reveal';
 
 function EducationSection({ ...props }) {
   return (
-    <Reveal as="section" {...props}>
+    <Reveal id="education" as="section" {...props}>
       <GridAutoCols min={'0.5fr'} max={'1fr'} fitOrFill="fill">
         <div>
           <SectionHeader

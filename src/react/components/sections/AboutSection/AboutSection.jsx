@@ -5,7 +5,7 @@ import { Reveal } from '../../common/Reveal/Reveal';
 
 function AboutSection({ ...props }) {
   return (
-    <Reveal as="section" {...props}>
+    <Reveal id="about" as="section" {...props}>
       <AboutCard about={aboutData} />
     </Reveal>
   );
