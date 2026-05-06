@@ -19,7 +19,7 @@ function ProjectsSection({ ...props }) {
         min={'20rem'}
         max={'1fr'}
         fitOrFill="fill"
-        style={{ gap: '1rem', marginBottom: '5rem' }}
+        style={{ gap: '1rem' }}
       >
         {projectsData.items.map((project) => (
           <ProjectCard key={project.index} project={project} />
