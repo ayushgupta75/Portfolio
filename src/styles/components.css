@@ -108,6 +108,7 @@
   border-radius: 28px;
 }
 
+/* TODO DELETE: Already used in a css module (.focus-list) */
 .focus-list {
   margin: 0 0 1.5rem;
   padding-left: 1.2rem;
@@ -115,6 +116,7 @@
   line-height: 1.7;
 }
 
+/* TODO DELETE: Already used in a css module (.availability-pill) */
 .availability-pill {
   display: inline-flex;
   align-items: center;
@@ -125,6 +127,7 @@
   font-size: 0.95rem;
 }
 
+/* TODO DELETE: Already used in a css module (.status-dot) */
 .status-dot {
   width: 0.7rem;
   height: 0.7rem;
