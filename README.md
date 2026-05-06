@@ -1,69 +1,65 @@
 # Portfolio Starter
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES2020-yellow?logo=javascript)](https://www.javascript.com/)
 [![HTML5](https://img.shields.io/badge/HTML-5-E34C26?logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
 [![CSS3](https://img.shields.io/badge/CSS-3-1572B6?logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 
-A modern, modular portfolio starter built with vanilla JavaScript and CSS. Designed for professional customization, rapid deployment, and future extensibility with AI-powered resume retrieval (RAG).
+A modern, modular portfolio starter built with React and Vite. Designed for professional customization, rapid deployment, and future extensibility with AI-powered resume retrieval (RAG).
 
-**Perfect for:** developers, designers, product managers, and other professionals who want a clean, maintainable portfolio without framework overhead.
+**Perfect for:** developers, designers, product managers, and other professionals who want a clean, maintainable portfolio with a component-based architecture.
 
 ## ✨ Features
 
-- **Zero-dependency frontend** — Vanilla JavaScript, HTML5, and CSS3 only
+- **React 19 + Vite** — Fast development server with HMR and optimized production builds
 - **Data-driven architecture** — Separate content from presentation; edit `src/data/` without touching components
 - **Design token system** — Centralized color and spacing tokens for rapid theming
 - **Responsive & accessible** — Mobile-first responsive design with semantic HTML
-- **Module-based structure** — Easy to add, remove, or reorder portfolio sections
+- **Component-based structure** — Easy to add, remove, or reorder portfolio sections
 - **RAG-ready backend boundary** — Planned LangChain integration for resume-based AI chat
 - **Deployment-ready** — Works on GitHub Pages, Netlify, Vercel, or any static host
-- **Performance optimized** — No build step required; instant startup and zero runtime bloat
 
 ## 📦 Project Structure
 
 ```
 .
 ├── index.html              # Page entry point
+├── vite.config.js          # Vite + React plugin configuration
 ├── src/
-│   ├── app/               # Application bootstrapping
-│   │   ├── boot.js       # Initialization and DOM mounting
-│   │   └── main.js       # Entry point
-│   ├── components/        # Reusable UI components
-│   │   ├── common/       # Base components (Button, Link, SectionHeading)
-│   │   ├── layout/       # Layout components (Navigation)
-│   │   ├── pages/        # Page compositions (HomePage)
-│   │   └── sections/     # Section renderers (Hero, About, Experience, etc.)
-│   ├── data/             # 📝 Editable portfolio content
-│   │   ├── site.js       # Main data aggregator
-│   │   ├── hero.js       # Hero section content
-│   │   ├── about.js      # About section content
-│   │   ├── experience.js # Work experience entries
-│   │   ├── education.js  # Education entries
-│   │   ├── projects.js   # Project showcase data
-│   │   ├── contact.js    # Contact information
-│   │   └── navigation.js # Navigation menu items
-│   ├── utils/            # Helper functions
-│   │   ├── dom.js        # DOM manipulation utilities
-│   │   └── animation.js  # Animation helpers
-│   └── styles/           # CSS organization
-│       ├── tokens.css    # Design system (colors, spacing, fonts)
-│       ├── base.css      # Element resets and defaults
-│       ├── layout.css    # Layout structure and grid
-│       ├── components.css # Component-specific styles
-│       ├── sections.css  # Section-specific styles
-│       ├── utilities.css # Utility classes
-│       └── main.css      # Master stylesheet import
-├── server/               # 🚀 Reserved for RAG backend (future)
-├── docs/                 # Documentation
-│   └── architecture.md   # Architecture and design decisions
-└── README.md             # This file
+│   ├── react/             # React application
+│   │   ├── main.jsx       # React entry point
+│   │   └── components/    # Reusable UI components
+│   │       ├── common/    # Base components (Button, Link, SectionHeading, Reveal, TagList)
+│   │       ├── features/  # Section-specific cards (HeroCard, ExperienceCard, ProjectCard, etc.)
+│   │       ├── layout/    # Layout components (PageShell, Header, Navigation, Footer)
+│   │       └── sections/  # Page sections (HeroSection, AboutSection, ExperienceSection, etc.)
+│   ├── data/              # 📝 Editable portfolio content
+│   │   ├── site.js        # Main data aggregator
+│   │   ├── hero.js        # Hero section content
+│   │   ├── about.js       # About section content
+│   │   ├── experience.js  # Work experience entries
+│   │   ├── education.js   # Education entries
+│   │   ├── projects.js    # Project showcase data
+│   │   ├── contact.js     # Contact information
+│   │   └── navigation.js  # Navigation menu items
+│   └── styles/            # Global CSS/SCSS
+│       ├── tokens.css     # Design system (colors, spacing, fonts)
+│       ├── base.css       # Element resets and defaults
+│       ├── main.css       # Master stylesheet import
+│       └── _breakpoints.scss # Responsive breakpoint mixins
+├── server/                # 🚀 Reserved for RAG backend (future)
+├── docs/                  # Documentation
+│   └── architecture.md    # Architecture and design decisions
+└── README.md              # This file
 ```
 
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 14+ (for local development) or Python 3.6+ (alternative)
+
+- Node.js 18+
 - A modern web browser
 
 ### Installation & Local Development
@@ -73,17 +69,14 @@ A modern, modular portfolio starter built with vanilla JavaScript and CSS. Desig
 git clone <your-repo-url>
 cd Portfolio
 
-# Option 1: Using Python (built-in on macOS/Linux)
-python3 -m http.server 8000
+# Install dependencies
+npm install
 
-# Option 2: Using Node.js with http-server
-npx http-server
-
-# Option 3: Using Node.js with live-server (auto-refresh)
-npx live-server
+# Start the development server
+npm run dev
 ```
 
-Open your browser to `http://localhost:8000` and start developing.
+Open your browser to `http://localhost:5173` and start developing.
 
 ## ✏️ Customization Guide
 
@@ -95,24 +88,24 @@ All portfolio content is in `src/data/`. Edit these files to personalize your si
 // src/data/hero.js
 export const heroData = {
   greeting: "Hi, I'm [Your Name]",
-  tagline: "Your profession and expertise",
-  cta: "View My Work",
+  tagline: 'Your profession and expertise',
+  cta: 'View My Work',
 };
 
 // src/data/about.js
 export const aboutData = {
-  headline: "About Me",
-  paragraphs: ["Your bio here..."],
+  headline: 'About Me',
+  paragraphs: ['Your bio here...'],
 };
 
 // src/data/experience.js
 export const experienceData = [
   {
-    company: "Company Name",
-    role: "Job Title",
-    startDate: "Jan 2023",
-    endDate: "Present",
-    description: "What you did...",
+    company: 'Company Name',
+    role: 'Job Title',
+    startDate: 'Jan 2023',
+    endDate: 'Present',
+    description: 'What you did...',
   },
 ];
 
@@ -133,8 +126,8 @@ Update colors, fonts, and spacing in `src/styles/tokens.css`:
   --color-text: #111827;
 
   /* Typography */
-  --font-serif: "Fraunces", serif;
-  --font-sans: "Space Grotesk", sans-serif;
+  --font-serif: 'Fraunces', serif;
+  --font-sans: 'Space Grotesk', sans-serif;
   --font-size-base: 16px;
 
   /* Spacing */
@@ -148,24 +141,24 @@ Update colors, fonts, and spacing in `src/styles/tokens.css`:
 
 ### 3. **Add New Sections**
 
-1. Create a new section renderer in `src/components/sections/`:
+1. Create a new section component in `src/react/components/sections/`:
 
-```javascript
-// src/components/sections/MyNewSection.js
-import { renderSectionHeading } from "../common/SectionHeading.js";
+```jsx
+// src/react/components/sections/MyNewSection/MyNewSection.jsx
+import SectionHeader from '../../common/SectionHeader/SectionHeader.jsx';
 
-export const renderMyNewSection = (data) => `
-  <section class="my-new-section">
-    ${renderSectionHeading(data.title)}
-    <div class="section-content">
-      ${data.content}
-    </div>
-  </section>
-`;
+export default function MyNewSection({ data }) {
+  return (
+    <section id="my-new-section">
+      <SectionHeader heading={data.heading} />
+      <div>{data.content}</div>
+    </section>
+  );
+}
 ```
 
 2. Add data in `src/data/myNewSection.js`
-3. Import and compose in `src/components/pages/HomePage.js`
+3. Import and render in `src/react/main.jsx`
 4. Add to the data aggregator in `src/data/site.js`
 
 ### 4. **Modify Navigation**
@@ -174,28 +167,40 @@ Edit `src/data/navigation.js` to add or remove navigation links:
 
 ```javascript
 export const navigationData = [
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
 ];
 ```
 
 ## 🌐 Deployment
 
+### Build for Production
+
+```bash
+npm run build
+# Output is in the dist/ folder
+```
+
 ### GitHub Pages
 
-1. Push code to a GitHub repository
-2. Go to **Settings → Pages**
-3. Select "Deploy from branch" and choose your branch
+1. Build the project: `npm run build`
+2. Push the `dist/` folder to the `gh-pages` branch (or configure your CI to do so)
+3. Go to **Settings → Pages** and select the `gh-pages` branch
 4. Your site is live at `https://yourusername.github.io/Portfolio`
+
+> **Tip:** Use the [`gh-pages`](https://www.npmjs.com/package/gh-pages) package to automate deployment:
+>
+> ```bash
+> npm install --save-dev gh-pages
+> # add "deploy": "gh-pages -d dist" to package.json scripts
+> npm run build && npm run deploy
+> ```
 
 ### Netlify
 
-```bash
-# Drag and drop the project folder into Netlify
-# Or connect your Git repo for continuous deployment
-```
+Connect your Git repository for continuous deployment — Netlify will auto-detect Vite and run `npm run build` with `dist/` as the publish directory.
 
 ### Vercel
 
@@ -203,31 +208,34 @@ export const navigationData = [
 # Install Vercel CLI
 npm i -g vercel
 
-# Deploy
+# Deploy (Vercel auto-detects Vite)
 vercel
 ```
 
 ### Traditional Hosting
 
-Upload all files (except `node_modules/` if any) to your hosting provider's public directory.
+Run `npm run build` and upload the contents of the `dist/` folder to your hosting provider's public directory.
 
 ## 🤖 Future Work: AI-Powered Resume Retrieval (RAG)
 
 The project is architected to scale with backend capabilities. The `server/` directory is reserved for the following planned features:
 
 ### Phase 1: Backend Foundation (Q3 2026)
+
 - [ ] **Document Processing**: PDF and text resume parsers
 - [ ] **Vector Embeddings**: Integration with OpenAI or Hugging Face embeddings
 - [ ] **Vector Store**: ChromaDB or Pinecone for embeddings storage
 - [ ] **REST API Endpoints**: `/api/chat` and `/api/retrieve` endpoints
 
 ### Phase 2: RAG System (Q4 2026)
+
 - [ ] **LangChain Integration**: Resume-based retrieval chains
 - [ ] **Semantic Search**: Query resume content by meaning, not just keywords
 - [ ] **Context Augmentation**: Retrieve relevant resume sections for chat responses
 - [ ] **Memory Management**: Conversation history and context windows
 
 ### Phase 3: Frontend Chat UI (Q1 2027)
+
 - [ ] **Chat Component**: Interactive chat widget in the portfolio
 - [ ] **Real-time Streaming**: SSE or WebSocket for streaming responses
 - [ ] **Context Awareness**: Surface relevant resume sections with citations
@@ -267,10 +275,10 @@ Frontend (Current)          Backend (Future)
 
 ### Code Standards
 
-- **JavaScript**: ES2020+ with no transpilation needed
-- **CSS**: CSS Grid and Flexbox for layout; custom properties for theming
+- **React**: Functional components with hooks; no class components
+- **CSS**: CSS Modules (`.module.css` / `.module.scss`) for component styles; global tokens in `src/styles/tokens.css`
+- **JavaScript**: ES2020+ with JSX; Vite handles transpilation
 - **HTML**: Semantic HTML5 with proper ARIA labels
-- **Performance**: <50KB total bundle size; <100ms FCP
 
 ### Git Workflow
 
