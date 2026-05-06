@@ -1,5 +1,5 @@
 import Navigation from '../../layout/Navigation/Navigation';
-import styles from './Header.module.css';
+import styles from './Header.module.scss';
 
 function Header({ ...props }) {
   return (

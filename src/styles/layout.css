@@ -133,6 +133,7 @@
     padding-top: 1rem;
   }
 
+  /* DONE */
   .site-header,
   .site-footer {
     gap: 1rem;
@@ -140,6 +141,7 @@
     flex-direction: column;
   }
 
+  /* NOT NEEDED */
   h1 {
     max-width: 100%;
   }

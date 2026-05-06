@@ -1,3 +1,5 @@
+@use '../../../../styles/breakpoints' as *;
+
 .site-footer {
   display: flex;
   align-items: center;
@@ -7,6 +9,12 @@
   border-top: 1px solid var(--line);
 
   margin-top: 5rem;
+
+  @media (max-width: $breakpoint-sm) {
+    gap: 1rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 .site-footer,

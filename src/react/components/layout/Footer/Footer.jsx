@@ -1,5 +1,5 @@
 import Link from '../../common/Link/Link';
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import commonStyles from '../../CommonStyles.module.css';
 
 function Footer() {
