@@ -1,12 +1,12 @@
+import { Reveal } from '../../common/Reveal/Reveal';
 import commonStyles from '../../CommonStyles.module.css';
 import styles from './EducationCard.module.scss';
 
 function EducationCard({ education, ...props }) {
-  // TODO: Add reveal
   const className = `${commonStyles.container} ${styles['education-card']}`;
 
   return (
-    <article {...props} className={className}>
+    <Reveal as="article" {...props} className={className}>
       <EducationTimeline
         duration={education.duration}
         degree={education.degree}
@@ -15,7 +15,7 @@ function EducationCard({ education, ...props }) {
         college={education.college}
         major={education.major}
       />
-    </article>
+    </Reveal>
   );
 }
 

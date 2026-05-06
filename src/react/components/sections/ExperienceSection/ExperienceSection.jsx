@@ -4,12 +4,11 @@ import { experienceData } from '../../../../data/experience';
 import ExperienceCard from '../../features/ExperienceCard/ExperienceCard';
 import GridAutoCols from '../../common/GridAutoCols/GridAutoCols';
 import styles from './ExperienceSection.module.css';
+import { Reveal } from '../../common/Reveal/Reveal';
 
 function ExperienceSection({ ...props }) {
-  // TODO add reveal animation
-
   return (
-    <section {...props}>
+    <Reveal as="section" {...props}>
       <GridAutoCols min={'0.5fr'} max={'1fr'} fitOrFill="fill">
         <div>
           <SectionHeader
@@ -27,7 +26,7 @@ function ExperienceSection({ ...props }) {
           ))}
         </div>
       </GridAutoCols>
-    </section>
+    </Reveal>
   );
 }
 

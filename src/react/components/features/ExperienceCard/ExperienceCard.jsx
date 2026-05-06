@@ -1,3 +1,4 @@
+import { Reveal } from '../../common/Reveal/Reveal';
 import commonStyles from '../../CommonStyles.module.css';
 import styles from './ExperienceCard.module.scss';
 
@@ -5,7 +6,7 @@ function ExperienceCard({ experience, ...props }) {
   const className = `${commonStyles.container} ${styles['experience-card']}`;
 
   return (
-    <article className={className} {...props}>
+    <Reveal as="article" className={className} {...props}>
       <ExperienceCardHeader
         company={experience.company}
         role={experience.role}
@@ -13,7 +14,7 @@ function ExperienceCard({ experience, ...props }) {
       />
 
       <ExperienceCardDetails details={experience.details} />
-    </article>
+    </Reveal>
   );
 }
 

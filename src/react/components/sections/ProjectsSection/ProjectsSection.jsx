@@ -4,12 +4,11 @@ import { projectsData } from '../../../../data/projects';
 import ProjectCard from '../../features/ProjectCard/ProjectCard';
 import SectionHeading from '../../common/SectionHeading/SectionHeading';
 import SectionHeader from '../../common/SectionHeader/SectionHeader';
+import { Reveal } from '../../common/Reveal/Reveal';
 
 function ProjectsSection({ ...props }) {
-  // TODO add reveal animation
-
   return (
-    <section {...props}>
+    <Reveal as="section" {...props}>
       <SectionHeader
         eyebrow={projectsData.eyebrow}
         title={projectsData.title}
@@ -20,7 +19,7 @@ function ProjectsSection({ ...props }) {
           <ProjectCard key={project.index} project={project} />
         ))}
       </div>
-    </section>
+    </Reveal>
   );
 }
 

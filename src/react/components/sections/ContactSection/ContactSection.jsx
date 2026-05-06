@@ -4,12 +4,11 @@ import commonStyles from '../../CommonStyles.module.css';
 import { contactData } from '../../../../data/contact';
 import ContactCard from '../../features/ContactCard/ContactCard';
 import styles from './ContactSection.module.scss';
+import { Reveal } from '../../common/Reveal/Reveal';
 
 function ContactSection({ ...props }) {
-  // TODO add reveal animation
-
   return (
-    <section className={styles['contact-section']} {...props}>
+    <Reveal as="section" className={styles['contact-section']} {...props}>
       <div>
         <SectionHeader
           eyebrow={contactData.eyebrow}
@@ -18,7 +17,7 @@ function ContactSection({ ...props }) {
       </div>
 
       <ContactCard summary={contactData.summary} links={contactData.links} />
-    </section>
+    </Reveal>
   );
 }
 
