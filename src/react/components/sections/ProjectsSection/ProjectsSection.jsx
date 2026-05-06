@@ -1,8 +1,8 @@
-import GridAutoCols from '../../common/GridAutoCols/GridAutoCols';
+import styles from './ProjectsSection.module.scss';
+
 import { projectsData } from '../../../../data/projects';
 import ProjectCard from '../../features/ProjectCard/ProjectCard';
 import SectionHeading from '../../common/SectionHeading/SectionHeading';
-import commonStyles from '../../CommonStyles.module.css';
 import SectionHeader from '../../common/SectionHeader/SectionHeader';
 
 function ProjectsSection({ ...props }) {
@@ -15,16 +15,11 @@ function ProjectsSection({ ...props }) {
         title={projectsData.title}
       />
 
-      <GridAutoCols
-        min={'20rem'}
-        max={'1fr'}
-        fitOrFill="fill"
-        style={{ gap: '1rem' }}
-      >
+      <div className={`${styles['projects-grid']}`}>
         {projectsData.items.map((project) => (
           <ProjectCard key={project.index} project={project} />
         ))}
-      </GridAutoCols>
+      </div>
     </section>
   );
 }
