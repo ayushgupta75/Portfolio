@@ -26,3 +26,11 @@
   background: rgba(255, 250, 240, 0.72);
   backdrop-filter: blur(12px);
 }
+
+.button-primary:hover {
+  color: #fffaf0;
+}
+
+.button-secondary:hover {
+  color: var(--text);
+}
