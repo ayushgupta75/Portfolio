@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 
 import '../styles/main.css';
@@ -13,8 +13,13 @@ import PageShell from './components/layout/PageShell/PageShell';
 import Footer from './components/layout/Footer/Footer';
 import Main from './components/layout/Main/Main';
 import Header from './components/layout/Header/Header';
+import { portfolioPage } from '../data/site';
 
 function App() {
+  useEffect(() => {
+    document.title = `${portfolioPage.owner} | Portfolio`;
+  }, []);
+
   return (
     <PageShell>
       <Header />
