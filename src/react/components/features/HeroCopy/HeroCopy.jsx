@@ -4,7 +4,7 @@ import styles from './HeroCopy.module.css';
 import PrimaryButton from '../../common/Button/PrimaryButton';
 import SecondaryButton from '../../common/Button/SecondaryButton';
 
-function HeroCopy({ hero = mockHero, ...props }) {
+function HeroCopy({ hero, ...props }) {
   return (
     <div className={styles['hero-copy']} {...props}>
       <p className={commonStyles.eyebrow}>{hero.eyebrow}</p>

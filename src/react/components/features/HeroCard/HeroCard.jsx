@@ -2,9 +2,12 @@ import commonStyles from '../../CommonStyles.module.css';
 import styles from './HeroCard.module.css';
 
 function HeroCard({ hero, ...props }) {
+  // TODO add reveal animation
+  const className = `${commonStyles.container} ${styles['hero-card']}`;
+
   return (
-    <aside className={commonStyles.container} {...props}>
-      <p className={commonStyles.paragraph}>Snapshot</p>
+    <aside className={className} {...props}>
+      <p className={commonStyles.eyebrow}>{hero.snapshot.label}</p>
 
       <ul className={styles['focus-list']}>
         {hero.snapshot.items.map((item, index) => (
