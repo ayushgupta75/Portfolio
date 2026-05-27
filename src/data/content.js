@@ -8,14 +8,16 @@ export const site = {
   initials: 'AG',
   tagline:  'I build things for the web.',
   subTagline: 'Developer. Craftsman. Lifelong learner.',
-  location: 'India',
+  location: 'United States',
   email:    'ayushguptakonto@gmail.com',
 }
 
 export const nav = [
-  { label: 'Work',    href: '#work'    },
-  { label: 'Now',     href: '#now'     },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Now',        href: '#now'        },
+  { label: 'Experience', href: '#experience' },
+  // { label: 'Education',  href: '#education'  },
+  { label: 'Work',       href: '#work'       },
+  { label: 'Contact',    href: '#contact'    },
 ]
 
 export const hero = {
@@ -27,16 +29,16 @@ export const hero = {
     href:  '#work',
   },
 }
-
-export const about = {
-  eyebrow:  'About Me',
-  heading:  'A developer who gives a damn.',
-  bio: [
-    'I\'m Ayush — a developer based in India. I build web experiences that are fast, thoughtful, and intentional.',
-    'I believe great software is quiet. It doesn\'t shout — it just works, beautifully.',
-    'This site is a living document of my life, my work, and the things I\'m figuring out along the way.',
-  ],
-}
+// This is not required
+// export const about = {
+//   eyebrow:  'About Me',
+//   heading:  'A developer who gives a damn.',
+//   bio: [
+//     'I\'m Ayush — a developer based in India. I build web experiences that are fast, thoughtful, and intentional.',
+//     'I believe great software is quiet. It doesn\'t shout — it just works, beautifully.',
+//     'This site is a living document of my life, my work, and the things I\'m figuring out along the way.',
+//   ],
+// }
 
 export const now = {
   eyebrow: 'Now',
@@ -44,7 +46,7 @@ export const now = {
   items: [
     'Building this portfolio — one section at a time.',
     'Exploring new system design patterns.',
-    'Reading, thinking, and writing more.',
+    'Reading, thinking, and building more.',
   ],
   updatedAt: 'May 2026',
 }
@@ -72,6 +74,46 @@ export const work = {
   ],
 }
 
+export const experience = {
+  eyebrow: 'Experience',
+  heading: 'Where I\'ve worked.',
+  jobs: [
+    {
+      company:     'Company One',
+      role:        'Software Engineer',
+      duration:    '2024 — Present',
+      location:    'Remote',
+      description: 'A short line about what you did and the impact you made.',
+    },
+    {
+      company:     'Company Two',
+      role:        'Frontend Developer',
+      duration:    '2023 — 2024',
+      location:    'On-site',
+      description: 'A short line about what you did and the impact you made.',
+    },
+  ],
+}
+
+export const education = {
+  eyebrow: 'Education',
+  heading: 'Where I\'ve studied.',
+  schools: [
+    {
+      school:   'University One',
+      degree:   'Bachelor of Science in Computer Science',
+      duration: '2019 — 2023',
+      location: 'City, State',
+    },
+    {
+      school:   'School Two',
+      degree:   'High School Diploma',
+      duration: '2015 — 2019',
+      location: 'City, State',
+    },
+  ],
+}
+
 export const contact = {
   eyebrow:  'Contact',
   heading:  'Let\'s talk.',
@@ -80,6 +122,6 @@ export const contact = {
   socials: [
     { label: 'GitHub',   href: 'https://github.com/' },
     { label: 'LinkedIn', href: 'https://linkedin.com/' },
-    { label: 'Twitter',  href: 'https://twitter.com/' },
+    // { label: 'Twitter',  href: 'https://twitter.com/' },
   ],
 }
