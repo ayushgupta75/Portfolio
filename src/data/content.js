@@ -7,8 +7,8 @@
 //  FEATURE FLAGS — comment out to disable
 // ─────────────────────────────────────────
 export const features = {
-  chatbot:    true,  // ← comment this line out to disable chatbot
-  beyondCode: true,  // ← comment this line out to disable Beyond Code section
+  // chatbot:    true,  // ← comment this line out to disable chatbot
+  // beyondCode: true,  // ← comment this line out to disable Beyond Code section
 }
 
 export const site = {
@@ -23,7 +23,6 @@ export const site = {
 export const nav = [
   { label: 'Now',        href: '#now'        },
   { label: 'Experience', href: '#experience' },
-  // { label: 'Education',  href: '#education'  },
   { label: 'Work',       href: '#work'       },
   { label: 'Writing',    href: '#writing'    },
   { label: 'Passion',    href: '#beyond',    feature: 'beyondCode' },

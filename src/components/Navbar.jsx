@@ -21,7 +21,7 @@ export default function Navbar() {
       <nav className="max-w-6xl mx-auto px-8 h-16 flex items-center justify-between">
 
         {/* Logo / Name */}
-        <a href="#" className="font-serif text-lg text-ink tracking-wide">
+        <a href="/" className="font-serif text-lg text-ink tracking-wide">
           {site.name}
         </a>
 
