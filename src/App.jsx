@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
+import CommandBar from './components/CommandBar'
+import { features } from './data/content'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import Now from './sections/Now'
@@ -35,6 +37,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      {features.chatbot && <CommandBar />}
       <Routes>
         <Route path="/"               element={<Home />} />
         <Route path="/work/:slug"     element={<ProjectDetail />} />

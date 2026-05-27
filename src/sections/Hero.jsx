@@ -1,4 +1,4 @@
-import { hero } from '../data/content'
+import { hero, features } from '../data/content'
 import FadeIn from '../components/FadeIn'
 
 export default function Hero() {
@@ -41,8 +41,27 @@ export default function Hero() {
         </p>
       </FadeIn>
 
+      {/* Chatbot hint */}
+      {features.chatbot && (
+        <FadeIn delay={0.7}>
+          <button
+            onClick={() => window.dispatchEvent(new KeyboardEvent('keydown', { key: 'k', metaKey: true }))}
+            className="label text-mist hover:text-ink transition-colors duration-300 flex items-center gap-2 w-fit mb-6"
+          >
+            Ask me anything
+            <span className="border border-edge px-2 py-0.5 text-mist" style={{ fontSize: '0.6rem', letterSpacing: '0.1em' }}>
+              ⌘K
+            </span>
+            <span className="text-mist" style={{ fontSize: '0.6rem' }}>or</span>
+            <span className="border border-edge px-2 py-0.5 text-mist" style={{ fontSize: '0.6rem', letterSpacing: '0.1em' }}>
+              /
+            </span>
+          </button>
+        </FadeIn>
+      )}
+
       {/* CTA */}
-      <FadeIn delay={0.7}>
+      <FadeIn delay={0.85}>
         <a
           href={hero.cta.href}
           className="label text-accent hover:text-ink transition-colors duration-300 flex items-center gap-3 w-fit"

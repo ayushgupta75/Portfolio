@@ -3,16 +3,16 @@
 //  add, edit or remove posts.
 // ─────────────────────────────────────────
 
-export const links = {
-  eyebrow: 'Links',
-  heading: 'Find me on the internet.',
-  items: [
-    { label: 'LinkedIn',  href: 'https://linkedin.com/',   description: 'Professional profile'  },
-    { label: 'GitHub',    href: 'https://github.com/',     description: 'Code & projects'       },
-    { label: 'Medium',    href: 'https://medium.com/',     description: 'Writing & articles'    },
-    { label: 'Twitter',   href: 'https://twitter.com/',    description: 'Thoughts in 280 chars' },
-  ],
-}
+// export const links = {
+//   eyebrow: 'Links',
+//   heading: 'Find me on the internet.',
+//   items: [
+//     { label: 'LinkedIn',  href: 'https://linkedin.com/',   description: 'Professional profile'  },
+//     { label: 'GitHub',    href: 'https://github.com/',     description: 'Code & projects'       },
+//     { label: 'Medium',    href: 'https://medium.com/',     description: 'Writing & articles'    },
+//     { label: 'Twitter',   href: 'https://twitter.com/',    description: 'Thoughts in 280 chars' },
+//   ],
+// }
 
 export const blogMeta = {
   eyebrow: 'Writing',

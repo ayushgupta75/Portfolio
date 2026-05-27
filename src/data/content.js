@@ -3,6 +3,13 @@
 //  No need to touch any component files.
 // ─────────────────────────────────────────
 
+// ─────────────────────────────────────────
+//  FEATURE FLAGS — comment out to disable
+// ─────────────────────────────────────────
+export const features = {
+  // chatbot: true,  // ← comment this line out to disable chatbot
+}
+
 export const site = {
   name:     'Ayush Gupta',
   initials: 'AG',
