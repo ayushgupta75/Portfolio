@@ -17,6 +17,7 @@ export const nav = [
   { label: 'Experience', href: '#experience' },
   // { label: 'Education',  href: '#education'  },
   { label: 'Work',       href: '#work'       },
+  { label: 'Writing',    href: '#writing'    },
   { label: 'Contact',    href: '#contact'    },
 ]
 
@@ -56,18 +57,18 @@ export const work = {
   heading:  'Things I\'ve built.',
   projects: [
     {
+      slug:        'legal-llm',
       title:       'legal-llm',
       description: 'A short description of what this project is and why it matters.',
       tags:        ['React', 'Node.js'],
-      link:        '#',
       year:        '2025',
       image:       'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80',
     },
     {
+      slug:        'project-two',
       title:       'Project Two',
       description: 'A short description of what this project is and why it matters.',
       tags:        ['Vite', 'Tailwind'],
-      link:        '#',
       year:        '2025',
       image:       'https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=600&q=80',
     },

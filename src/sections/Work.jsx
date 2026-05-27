@@ -1,23 +1,22 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { work } from '../data/content'
 import FadeIn from '../components/FadeIn'
 
 function ProjectRow({ project }) {
   const [hovered, setHovered] = useState(false)
+  const navigate = useNavigate()
 
   return (
     <FadeIn delay={0.1 * project.index}>
       <li
-        className="group relative"
+        className="group relative cursor-pointer"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        onClick={() => navigate(`/work/${project.slug}`)}
       >
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-start justify-between py-8 border-b border-edge gap-8"
-        >
+        <div className="flex items-start justify-between py-8 border-b border-edge gap-8">
+
           {/* Left — index + title + description */}
           <div className="flex items-start gap-6 flex-1">
             <span className="italic-serif text-accent text-sm mt-1 w-6 shrink-0">
@@ -48,7 +47,7 @@ function ProjectRow({ project }) {
             <span className="italic-serif text-mist text-sm">{project.year}</span>
             <span
               className="label text-accent opacity-0 group-hover:opacity-100"
-              style={{ transition: 'opacity 0.3s ease, transform 0.3s ease' }}
+              style={{ transition: 'opacity 0.3s ease' }}
             >
               View →
             </span>
@@ -67,7 +66,7 @@ function ProjectRow({ project }) {
               <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
             </div>
           )}
-        </a>
+        </div>
       </li>
     </FadeIn>
   )
@@ -94,7 +93,7 @@ export default function Work() {
 
       <ul className="flex flex-col">
         {work.projects.map((project, i) => (
-          <ProjectRow key={project.title} project={{ ...project, index: i + 1 }} />
+          <ProjectRow key={project.slug} project={{ ...project, index: i + 1 }} />
         ))}
       </ul>
 
