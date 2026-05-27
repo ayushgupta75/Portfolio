@@ -7,7 +7,8 @@
 //  FEATURE FLAGS — comment out to disable
 // ─────────────────────────────────────────
 export const features = {
-  // chatbot: true,  // ← comment this line out to disable chatbot
+  chatbot:    true,  // ← comment this line out to disable chatbot
+  beyondCode: true,  // ← comment this line out to disable Beyond Code section
 }
 
 export const site = {
@@ -25,6 +26,7 @@ export const nav = [
   // { label: 'Education',  href: '#education'  },
   { label: 'Work',       href: '#work'       },
   { label: 'Writing',    href: '#writing'    },
+  { label: 'Passion',    href: '#beyond',    feature: 'beyondCode' },
   { label: 'Contact',    href: '#contact'    },
 ]
 
@@ -47,6 +49,43 @@ export const hero = {
 //     'This site is a living document of my life, my work, and the things I\'m figuring out along the way.',
 //   ],
 // }
+
+export const beyondCode = {
+  eyebrow: 'Beyond Code',
+  heading: 'Life outside the terminal.',
+  items: [
+    {
+      slug:        'photography',
+      icon:        '📷',
+      label:       'Photography',
+      description: 'Finding stillness in a single frame.',
+    },
+    {
+      slug:        'gym',
+      icon:        '🏋️',
+      label:       'Gym',
+      description: 'Discipline that carries into everything.',
+    },
+    {
+      slug:        'reading',
+      icon:        '📖',
+      label:       'Reading',
+      description: 'Ideas that rewire how I think.',
+    },
+    {
+      slug:        'travel',
+      icon:        '✈️',
+      label:       'Travel',
+      description: 'New places, new perspectives.',
+    },
+    {
+      slug:        'gaming',
+      icon:        '🎮',
+      label:       'Gaming',
+      description: 'Strategy, stories, and the occasional rage-quit.',
+    },
+  ],
+}
 
 export const now = {
   eyebrow: 'Now',

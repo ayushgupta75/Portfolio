@@ -7,12 +7,14 @@ import Hero from './sections/Hero'
 import Now from './sections/Now'
 import Experience from './sections/Experience'
 import Education from './sections/Education'
+import BeyondCode from './sections/BeyondCode'
 import Work from './sections/Work'
 import Blog from './sections/Blog'
 import Contact from './sections/Contact'
 import Footer from './components/Footer'
 import ProjectDetail from './pages/ProjectDetail'
 import PostDetail from './pages/PostDetail'
+import PursuitDetail from './pages/PursuitDetail'
 import './index.css'
 
 function Home() {
@@ -26,6 +28,7 @@ function Home() {
         <Education />
         <Work />
         <Blog />
+        {features.beyondCode && <BeyondCode />}
         <Contact />
       </main>
       <Footer />
@@ -42,6 +45,7 @@ function App() {
         <Route path="/"               element={<Home />} />
         <Route path="/work/:slug"     element={<ProjectDetail />} />
         <Route path="/writing/:slug"  element={<PostDetail />} />
+        <Route path="/beyond/:slug"   element={<PursuitDetail />} />
       </Routes>
     </BrowserRouter>
   )

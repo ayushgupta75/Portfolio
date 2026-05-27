@@ -1,11 +1,12 @@
-import { site, nav } from '../data/content'
+import { site, nav, features } from '../data/content'
 import useScrollDirection from '../hooks/useScrollDirection'
 import useActiveSection from '../hooks/useActiveSection'
 
-const SECTION_IDS = nav.map(({ href }) => href.replace('#', ''))
+const visibleNav = nav.filter(({ feature }) => !feature || features[feature])
+const SECTION_IDS = visibleNav.map(({ href }) => href.replace('#', ''))
 
 export default function Navbar() {
-  const { scrollDir, atTop } = useScrollDirection()
+  const atTop = useScrollDirection()
   const active = useActiveSection(SECTION_IDS)
 
   return (
@@ -26,7 +27,7 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <ul className="flex items-center gap-10">
-          {nav.map(({ label, href }) => {
+          {visibleNav.map(({ label, href }) => {
             const id = href.replace('#', '')
             const isActive = active === id
             return (
