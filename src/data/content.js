@@ -54,7 +54,7 @@ export const work = {
   heading:  'Things I\'ve built.',
   projects: [
     {
-      title:       'Project One',
+      title:       'legal-llm',
       description: 'A short description of what this project is and why it matters.',
       tags:        ['React', 'Node.js'],
       link:        '#',
