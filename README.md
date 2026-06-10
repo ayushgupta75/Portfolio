@@ -1,6 +1,6 @@
 # ayushgupta.us
 
-Personal portfolio website — a living document of my work, writing, and life.
+Personal portfolio website — a living document of my work, writing, and life. 
 
 **Live →** [ayushgupta.us](https://ayushgupta.us)
 
