@@ -1,14 +1,16 @@
 import { useEffect } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate, useLocation } from 'react-router-dom'
 
 export default function SourceRedirect() {
   const { source } = useParams()
   const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     if (source) sessionStorage.setItem('visit_source', source)
-    navigate('/', { replace: true })
-  }, [source, navigate])
+    const destination = location.pathname.replace(/\/from\/[^/]+$/, '') || '/'
+    navigate(destination, { replace: true })
+  }, [source, navigate, location])
 
   return null
 }

@@ -59,7 +59,8 @@ function App() {
         <Route path="/writing/:slug"  element={<PostDetail />} />
         <Route path="/beyond/:slug"   element={<PursuitDetail />} />
         <Route path="/legal-llm"      element={<LegalLLMChat />} />
-        <Route path="/from/:source"   element={<SourceRedirect />} />
+        <Route path="/from/:source"            element={<SourceRedirect />} />
+        <Route path="/legal-llm/from/:source" element={<SourceRedirect />} />
       </Routes>
     </BrowserRouter>
   )
