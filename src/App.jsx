@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import ProjectDetail from './pages/ProjectDetail'
 import PostDetail from './pages/PostDetail'
 import PursuitDetail from './pages/PursuitDetail'
+import LegalLLMChat from './legal-llm'
 import './index.css'
 
 function Home() {
@@ -46,6 +47,7 @@ function App() {
         <Route path="/work/:slug"     element={<ProjectDetail />} />
         <Route path="/writing/:slug"  element={<PostDetail />} />
         <Route path="/beyond/:slug"   element={<PursuitDetail />} />
+        <Route path="/legal-llm"      element={<LegalLLMChat />} />
       </Routes>
     </BrowserRouter>
   )
