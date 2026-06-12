@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
 import CommandBar from './components/CommandBar'
 import { features } from './data/content'
+import { useVisitTracker } from './hooks/useVisitTracker'
+import { usePageTracking } from './hooks/usePageTracking'
 import Navbar from './components/Navbar'
 import Hero from './sections/Hero'
 import Now from './sections/Now'
@@ -16,6 +18,7 @@ import ProjectDetail from './pages/ProjectDetail'
 import PostDetail from './pages/PostDetail'
 import PursuitDetail from './pages/PursuitDetail'
 import LegalLLMChat from './legal-llm'
+import SourceRedirect from './pages/SourceRedirect'
 import './index.css'
 
 function Home() {
@@ -37,9 +40,17 @@ function Home() {
   )
 }
 
+function Analytics() {
+  usePageTracking()
+  return null
+}
+
 function App() {
+  useVisitTracker()
+
   return (
     <BrowserRouter>
+      <Analytics />
       <ScrollToTop />
       {features.chatbot && <CommandBar />}
       <Routes>
@@ -48,6 +59,8 @@ function App() {
         <Route path="/writing/:slug"  element={<PostDetail />} />
         <Route path="/beyond/:slug"   element={<PursuitDetail />} />
         <Route path="/legal-llm"      element={<LegalLLMChat />} />
+        <Route path="/from/:source"            element={<SourceRedirect />} />
+        <Route path="/legal-llm/from/:source" element={<SourceRedirect />} />
       </Routes>
     </BrowserRouter>
   )
