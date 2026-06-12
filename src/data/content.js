@@ -90,8 +90,6 @@ export const now = {
   eyebrow: 'Now',
   heading: 'What I\'m up to.',
   items: [
-    'Finishing my Master\'s in Computer Engineering at Virginia Tech (May 2026).',
-    'Teaching Assistant for Computer Systems — mentoring 300+ grad students.',
     'Building agentic AI systems with LangGraph, Claude, and RAG.',
     'Actively looking for full-time Software Engineering roles.',
   ],
